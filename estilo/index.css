@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: rgb(4, 7, 24);
+    background-image: url("../img/background-body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgb(17, 17, 31);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+nav {
+    background-color: rgba(0, 82, 140, 255);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: inline-block;
+    background-color: rgb(17, 17, 31);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.titulo {
+
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.sub-titulo {
+
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 400px 400px 400px;
+    gap: 100px 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.back-end {
+
+    background-color: rgba(1, 77, 135, 255);
+    width: 240px;
+    height: 170px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.back-end-2 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.front-end {
+
+    background-color: rgba(1, 77, 135, 255);
+    width: 240px;
+    height: 170px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.front-end-2 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.data-science {
+
+    background-color: rgba(1, 77, 135, 255);
+    width: 240px;
+    height: 170px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.data-science-2 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.inteligencia-artificial {
+
+    background-color: rgba(1, 77, 135, 255);
+    width: 240px;
+    height: 170px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.inteligencia-artificial-2 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.mobile {
+
+    background-color: rgba(1, 77, 135, 255);
+    width: 240px;
+    height: 170px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-2 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.gestao {
+
+    background-color: rgba(1, 77, 135, 255);
+    width: 240px;
+    height: 170px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.gestao-2 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.emoji1 {
+
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header, section {
+      padding: 10px;
+    }
+  
+    .logo img {
+      width: 120px;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-right: 155px;
+    }}

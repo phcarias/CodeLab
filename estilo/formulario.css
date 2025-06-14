@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: rgb(4, 7, 24);
+    background-image: url("../img/background-body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gridarea {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(17, 17, 31);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgba(0, 82, 140, 255);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: inline-block;
+    background-color: rgb(17, 17, 31);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+label {
+
+    color:rgb(255, 255, 255);
+    margin-right: 10px;
+}
+
+form {
+
+    text-align: center;
+    margin-top: 100px;
+}
+
+input {
+
+    margin-right: 20px;
+}
+
+#tipo {
+
+margin-top: 15px;
+text-align: center;
+
+}
+
+.tipos {
+
+    margin-top: 35px;
+}
+
+.texto {
+
+    margin-top: 35px;
+}
+
+.enviar {
+
+    margin-top: 25px;
+    margin-left: 635px;
+}
+
+@media (max-width: 600px) {
+
+    header, section {
+        padding: 10px;
+      }
+    
+      .logo img {
+        width: 120px;
+      }
+    
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+    #faleconosco {
+        width: 90%;
+        margin: 0 auto; 
+        margin-top: 60px;
+    }
+
+    input, textarea {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .tipos {
+        display: block; 
+    }
+
+    .tipos label {
+        display: block; 
+        margin: 5px 0;
+    }
+
+    textarea {
+        height: 120px; 
+        max-width: 100%; 
+    }
+
+    .enviar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
