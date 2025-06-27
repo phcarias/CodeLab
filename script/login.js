@@ -1,4 +1,3 @@
-
 const usuarios = [];
 
 document.getElementById("btn-cadastrar").addEventListener("click", () => {
