@@ -1,3 +1,81 @@
-.aparecerTelaCadastrar {
+#form-cadastrar {
+    display: none;
+}
+
+#form-cadastrar.aparecerTelaCadastrar {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/background-body.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Verdana', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+form {
+    background-color: rgba(1, 77, 135, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 280px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+button {
+    background-color: rgb(17, 17, 31);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+#btn-cadastrar {
+    margin-top: 15px;
+    background-color: rgb(17, 17, 31);
+}
+
+#form-cadastrar {
+    margin-top: 20px;
     display: none;
 }
