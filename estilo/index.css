@@ -55,6 +55,15 @@ nav a:hover {
     color: black;
 }
 
+#sair {
+    color: white;
+}
+
+.nav-sair {
+    background-color: white !important; 
+    color: black !important;            
+}
+
 .conteudo-principal {
     display: flex;
     justify-content: center;

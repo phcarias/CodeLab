@@ -1,4 +1,4 @@
-const usuarios = [];
+let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
 document.getElementById("btn-cadastrar").addEventListener("click", () => {
     document.getElementById("form-cadastrar").classList.toggle("aparecerTelaCadastrar");
@@ -13,6 +13,9 @@ document.getElementById("form-cadastrar-form").addEventListener("submit", (e) =>
     };
 
     usuarios.push(novoUsuario);
+    
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    
     alert("Cadastro OK");
     document.getElementById("form-cadastrar").classList.remove("aparecerTelaCadastrar");
     document.getElementById("novo-usuario").value = "";
@@ -25,7 +28,9 @@ document.getElementById("form-login").addEventListener("submit", (e) => {
     const usuario = document.getElementById("usuario").value;
     const senha = document.getElementById("senha").value;
 
-    const usuarioValido = usuarios.find(u => u.usuario === usuario && u.senha === senha);
+    const usuariosSalvos = JSON.parse(localStorage.getItem('usuarios')) || [];
+    
+    const usuarioValido = usuariosSalvos.find(u => u.usuario === usuario && u.senha === senha);
 
     if (usuarioValido) {
         alert("Acesso autorizado!");
